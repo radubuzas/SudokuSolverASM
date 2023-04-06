@@ -1,16 +1,34 @@
-This is a sudoku solver done in assembly x86.
+# Sudoku Solver (Assembly x86)
 
-The reading is done by using system interups to call the 'read' systen function.
+This is a Sudoku solver implemented in assembly x86. It uses system interrupts to call the 'read' system function for reading input, and employs a simple backtracking algorithm to solve the Sudoku grid.
 
-To solve the grid the program uses a simple backtracking method. 
+## Usage
 
-The completed sudoku will be displayed in 'output.txt'.
+1. Compile the program by typing `make` in the terminal.
+2. Execute the program.
+3. Input the Sudoku grid by following the specified convention (see below).
+4. The completed Sudoku will be displayed in 'output.txt'.
 
-To compile the program you will need to type in the terminal 'make'.
+To clean the executable and the output file, type `make clean`.
 
-To clean the executable and the output file type 'make clean'. 
+## Convention for Reading Input
 
+- Insert digits with a single space character between them.
+- Introduce a 'new line' character after completing a row.
 
-CONVENTION FOR READING:
+## Example Input
 
-After a digit is inserted there need to be precisly one 'space' character between them. After a row is done you need to introduce the 'new line' character.
+5 3 0 0 7 0 0 0 0
+6 0 0 1 9 5 0 0 0
+0 9 8 0 0 0 0 6 0
+8 0 0 0 6 0 0 0 3
+4 0 0 8 0 3 0 0 1
+7 0 0 0 2 0 0 0 6
+0 6 0 0 0 0 2 8 0
+0 0 0 4 1 9 0 0 5
+0 0 0 0 8 0 0 7 9
+
+Note: '0' represents an empty cell in the Sudoku grid.
+
+Feel free to use and modify this Sudoku solver for your own projects! Contributions are welcome.
+
