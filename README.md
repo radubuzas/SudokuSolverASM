@@ -5,11 +5,25 @@ This is a Sudoku solver implemented in assembly x86. It uses system interrupts t
 ## Usage
 
 1. Compile the program by typing `make` in the terminal.
+  ```bash
+  make
+  ```
+
 2. Execute the program.
+
+  ```bash
+  ./sudoku
+  ```
+   
 3. Input the Sudoku grid by following the specified convention (see below).
+   
 4. The completed Sudoku will be displayed in 'output.txt'.
 
 To clean the executable and the output file, type `make clean`.
+
+```bash
+make clean
+```
 
 ## Convention for Reading Input
 
@@ -18,17 +32,21 @@ To clean the executable and the output file, type `make clean`.
 
 ## Example Input
 
-5 3 0 0 7 0 0 0 0 <br/>
-6 0 0 1 9 5 0 0 0 <br/>
-0 9 8 0 0 0 0 6 0 <br/>
-8 0 0 0 6 0 0 0 3 <br/>
-4 0 0 8 0 3 0 0 1 <br/>
-7 0 0 0 2 0 0 0 6 <br/>
-0 6 0 0 0 0 2 8 0 <br/>
-0 0 0 4 1 9 0 0 5 <br/>
+```bash
+5 3 0 0 7 0 0 0 0
+6 0 0 1 9 5 0 0 0
+0 9 8 0 0 0 0 6 0
+8 0 0 0 6 0 0 0 3
+4 0 0 8 0 3 0 0 1
+7 0 0 0 2 0 0 0 6
+0 6 0 0 0 0 2 8 0
+0 0 0 4 1 9 0 0 5
 0 0 0 0 8 0 0 7 9
+```
 
 Note: '0' represents an empty cell in the Sudoku grid.
+
+## License
 
 Feel free to use and modify this Sudoku solver for your own projects! Contributions are welcome.
 
